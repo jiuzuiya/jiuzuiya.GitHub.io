@@ -2295,7 +2295,7 @@ body.DarkMode .theme-btn:hover {
     font-weight: 900;
     color: #d9534f;
 }
-/* 滚动条 */
+
 /* 滚动条 */
 ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 165, 150, 0.5);
