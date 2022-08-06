@@ -4,12 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="入坑第一天  初始HTML, Jiuzui">
-    <meta name="description" content="前言 
-随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。 
- 
-一、HTML是什么？ 
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;">
+    <meta name="keywords" content="JS 对象, Jiuzui">
+    <meta name="description" content="@TOC
+前言&amp;amp;emsp;&amp;nbsp;&amp;amp;emsp;&amp;nbsp;今天我们学习一下 JS 对象，这一块也是比较碎，需多加练习。
+一、对象的创建&amp;amp;emsp;&amp;amp;emsp;&amp;nbsp;1、创建对象:静态特点(属性)+动">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -32,7 +30,7 @@
     </style>
 
 
-    <title>入坑第一天  初始HTML | Jiuzui</title>
+    <title>JS 对象 | Jiuzui</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -438,12 +436,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">入坑第一天  初始HTML</h1>
+                    <h1 class="description center-align post-title">JS 对象</h1>
                 </div>
             </div>
         </div>
@@ -571,7 +569,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-10
+                    2022-08-06
                 </div>
                 
 
@@ -595,60 +593,189 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="%E5%89%8D%E8%A8%80"><a name="t0"></a><a id="_7"></a>前言</h1> 
-<p>随着人工智能的不断发展，机器学习这门技术也越来越重要，很多人都开启了学习机器学习，本文就介绍了机器学习的基础内容。</p> 
-<p></p> 
-<h1 id="%E4%B8%80%E3%80%81HTML%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><a name="t1"></a><a id="pandas_16"></a>一、HTML是什么？</h1> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML的全称为<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%B6%85%E6%96%87%E6%9C%AC%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/6972570" title="超文本标记语言">超文本标记语言</a>，是一种<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80/5964436" title="标记语言">标记语言</a>。它包括一系列<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%A0%87%E7%AD%BE/2440469" title="标签">标签</a>．通过这些标签可以将网络上的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%87%E6%A1%A3/1009768" title="文档">文档</a>格式统一，使分散的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/Internet/272794" title="Internet">Internet</a>资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%87%E6%9C%AC/5443630" title="文本">文本</a>，HTML命令可以说明<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%96%87%E5%AD%97/612910" title="文字">文字</a>，<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9B%BE%E5%BD%A2/773307" title="图形">图形</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8A%A8%E7%94%BB/206564" title="动画">动画</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%A3%B0%E9%9F%B3/33686" title="声音">声音</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%A1%A8%E6%A0%BC/3371820" title="表格">表格</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%93%BE%E6%8E%A5/2665501" title="链接">链接</a>等。</p> 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（来自百度百科0.0）</p> 
-<h1 id="%E4%BA%8C%E3%80%81%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE"><a name="t2"></a><a id="_19"></a>二、基本标签</h1> 
-<h2 id="1.%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><a name="t3"></a><a id="1_20"></a>1.基本结构</h2> 
-<p>学习之前我们先来了解一下基本结构，基本以后每次敲代码都要有的东西。</p> 
-<p>代码如下（示例）：</p> 
-<pre data-index="0"><code class="language-html hljs language-xml"><ol class="hljs-ln" style="width:100%"><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>网页标题 百度一下，你就知道<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		hello，这是我的第一个html页面</div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></div></div></li></ol></code><div class="hljs-button {2}" data-title="复制" onclick="hljs.copyCode(event)"></div></pre> 
-<p>效果展示：</p> 
-<p class="img-center"><img alt="" src="https://img-blog.csdnimg.cn/7f6aeb30675e499da7c18e863db07cd4.png" width="1000" height="261"></p> 
-<p>&nbsp;</p> 
-<p>解释：</p> 
-<ol><li>&lt;!DOCTYPE html&gt; &nbsp;声明文档类型 &nbsp;html5文档</li><li>&lt;html&gt;&lt;/html&gt;&nbsp; 根标记标签</li><li>&lt;head&gt;&lt;/head&gt; &nbsp;头标记标签&nbsp; <span style="color:#fe2c24;">（网页的标题titl ，通常里面的内容不会在浏览器显示出来）</span></li><li>&lt;body&gt;&lt;/body&gt; &nbsp;主体标记标签<span style="color:#fe2c24;">（写在这里的内容都会在浏览器显示出来）</span></li><li>&lt;meta charset="utf-8"&gt; 元数据标签 &nbsp; charset设置字符编码 &nbsp; utf-8万国码<span style="color:#fe2c24;">（防止中文乱码）</span><br> &lt;meta name="keywords" content=""&gt; &nbsp; 设置关键词<br> &lt;meta name="description" content=""&gt; &nbsp;设置网站描述 &nbsp; 内容不宜超过150个字符</li></ol>
-<h2 id="2.%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE%EF%BC%88%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%EF%BC%89"><a name="t4"></a>2.基本标签（常用的标签）</h2> 
-<p>&lt;h1&gt;&lt;h1&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标题标签 有<span style="color:#fe2c24;">（h1~h6）</span>六个</p> 
-<p>&lt;p&gt;&lt;/p&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;内容标签&nbsp;</p> 
-<p>&lt;img src="" /&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;图片标签&nbsp; src里填写图片的地址</p> 
-<p>&lt;br&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 换行</p> 
-<p>&lt;hr&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 水平线</p> 
-<p>&lt;b&gt;&lt;/b&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 加粗</p> 
-<p>&lt;strong&gt;&lt;/strong&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 加粗（与&lt;b&gt;标签区别在于&lt;strong&gt;有强调意义）</p> 
-<p>&lt;i&gt;&lt;/i&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 倾斜</p> 
-<p>&lt;em&gt;&lt;/em&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 倾斜（与strong一样也有强调意义）</p> 
-<p>&lt;sub&gt;&lt;/sub&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 下标&nbsp; &nbsp;例：&nbsp;<span style="color:#fe2c24;">H&lt;sub&gt;2&lt;/sub&gt;</span>&nbsp; &nbsp;显示 ：<img alt="H_{2}" class="mathcode" src="https://latex.codecogs.com/gif.latex?H_%7B2%7D">&nbsp;</p> 
-<p>&lt;sup&gt;&lt;/sup&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 上标&nbsp; &nbsp;<span style="color:#fe2c24;">&nbsp; &nbsp; x&lt;sup&gt;2&lt;/sup&gt;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span style="color:#fe2c24;"><img alt="x^{2}" class="mathcode" src="https://latex.codecogs.com/gif.latex?x%5E%7B2%7D"></span></p> 
-<p>&lt;div&gt;&lt;/div&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;块元素</p> 
-<p>&lt;span&gt;&lt;/span&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;行内元素</p> 
-<p>&amp;nbsp;&lt;&amp;ensp;&lt;&amp;emsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;空格符&nbsp; (间隙一次增大)</p> 
-<p>(在html中空格不会直接显示需要特殊符号来显示)</p> 
-<p>&lt;a href=""&gt;&lt;/a&gt;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;超链接（href填写链接地址）</p> 
-<h2 id="3.%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE%E7%BB%83%E4%B9%A0"><a name="t5"></a>3.基本标签练习</h2> 
-<h3 id="%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE%E7%BB%83%E4%B9%A0%3Cimg%20%2F%3E"><a name="t6"></a>图片标签练习&lt;img /&gt;</h3> 
-<p>代码如下（示例）：</p> 
-<pre data-index="1"><code class="language-html hljs language-xml"><ol class="hljs-ln" style="width:100%"><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-meta">&lt;!doctype <span class="hljs-keyword">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>图片路径<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span> /&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"img/ii.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"男孩子"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"300px"</span>/&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></div></div></li></ol></code><div class="hljs-button {2}" data-title="复制" onclick="hljs.copyCode(event)"></div></pre> 
-<p>效果图：</p> 
-<p class="img-center"><img alt="" src="https://img-blog.csdnimg.cn/a3f74f86d200423994b511f0047781bf.png" width="378" height="416"></p> 
-<p>&nbsp;注：图片过大的话，我们可以通过<span style="color:#fe2c24;">width</span>和<span style="color:#fe2c24;">height</span>来限制图片的宽高</p> 
-<p></p> 
-<h3 id="%E8%B6%85%E9%93%BE%E6%8E%A5%E6%A0%87%E7%AD%BE%E7%BB%83%E4%B9%A0%3Ca%3E%3C%2Fa%3E"><a name="t7"></a>超链接标签练习&lt;a&gt;&lt;/a&gt;</h3> 
-<p>代码如下（示例）：</p> 
-<pre data-index="2"><code class="language-html hljs language-xml"><ol class="hljs-ln" style="width:100%"><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="1"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="2"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="3"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="4"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="5"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>超链接<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="6"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="7"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="8"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="9"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string"><span class="hljs-string">"https://baike.baidu.com/item</span></span></span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="10"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-string">				/%E8%BF%AA%E8%BF%A6%E5%A5%A5%E7%89%B9%E6%9B%BC</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="11"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-string">				/571943?fromtitle=%E8%BF%AA%E8%BF%A6&amp;fromid=1690290&amp;fr=aladdin"</span>&gt;</div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="12"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">				超人大战小怪兽</div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="13"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="14"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="15"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="16"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"> </div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="17"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"one"</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="18"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			一天，平静的天空突然下起了瓢泼大雨，小怪兽来到了这颗为蓝色的星球。</div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="19"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			快逃！！！  敬请收看迪迦奥特曼下集————————迷失的小怪兽<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="20"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			</div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="21"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			大地渐渐苏醒<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="22"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			一丝晨光打破了夜的寂静<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="23"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			炙热的心在跳动<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="24"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			祈祷和平降临<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="25"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我们一起追寻前途弥漫荆棘和险峻<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="26"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			心中呐喊无边天际放射光明<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="27"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			看那蔚蓝色的星球<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="28"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			是我们永远的守候<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="29"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我伫立在这里倾听风的声音<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="30"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			来吧我的热情在飞翔<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="31"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			带着那灿烂的希望<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="32"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我们携手并肩穿越时空界限<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="33"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			冲破黑暗<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="34"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			YOU ARE ALWAYS MY HERO<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="35"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			大地渐渐苏醒<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="36"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			一丝晨光打破了夜的寂静<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="37"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			炙热的心在跳动<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="38"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			祈祷和平降临<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="39"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我们一起追寻前途弥漫荆棘和险峻<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="40"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			心中呐喊无边天际放射光明<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="41"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			看那蔚蓝色的星球<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="42"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			是我们永远的守候<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="43"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我伫立在这里倾听风的声音<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="44"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			来吧我的热情在飞翔<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="45"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			带着那灿烂的希望<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="46"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			我们携手并肩穿越时空界限<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="47"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			冲破黑暗<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="48"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">			YOU ARE ALWAYS MY HERO<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="49"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">		<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="50"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line">	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></div></div></li><li><div class="hljs-ln-numbers"><div class="hljs-ln-line hljs-ln-n" data-line-number="51"></div></div><div class="hljs-ln-code"><div class="hljs-ln-line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></div></div></li></ol></code><div class="hljs-button {2}" data-title="复制" onclick="hljs.copyCode(event)"></div></pre> 
-<p>效果图：&nbsp;</p> 
-<p><img alt="" src="https://img-blog.csdnimg.cn/d48d4914141742bf89130b687560c5a9.png" width="1200" height="560"></p> 
-<p>注：点击上面的蓝紫色字体就会跳转到你链接的网页，我这里链接了迪迦奥特曼的百度百科地址。大家可以试试看。</p> 
-<hr>
-<h1 id="%E6%80%BB%E7%BB%93"><a name="t8"></a><a id="_45"></a>总结</h1> 
-<p>今天的学习就到这里了，感谢观看！！！&nbsp; 可以多多练习，把基本标签多写写，看看是什么效果。</p> 
-<p>事不在难，贵在坚持！！加油&nbsp;&nbsp;</p> 
-<p></p>
-                <div><div></div></div>
- 
+                <p>@<a href="%E7%9B%AE%E5%BD%95">TOC</a></p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>&amp;emsp;&nbsp;&amp;emsp;&nbsp;今天我们学习一下 JS 对象，这一块也是比较碎，需多加练习。</p>
+<h2 id="一、对象的创建"><a href="#一、对象的创建" class="headerlink" title="一、对象的创建"></a>一、对象的创建</h2><p>&amp;emsp;&amp;emsp;&nbsp;1、创建对象:静态特点(属性)+动态特点(方法)</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">var zs={
+	"name":"张三",   //键值对
+	"sex":"boy",
+	"age":20,
+	"test":function(){
+			console.log("会跑步");
+	},
+	"addAge":function(n){
+			console.log(this.age+n);
+		}
+	}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>&amp;emsp;&amp;emsp;2、直接new一个对象，然后给里面的对象赋值</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">var ls=new Object();
+ls.name="张三";
+ls.age=20;
+ls.showInfo=function(){
+		console.log(this.name,this.age);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>调用对象：</p>
+<p>&amp;emsp;&amp;emsp;调用对象属性:对象名.属性名 或 对象名[属性名]</p>
+<p>&amp;emsp;&amp;emsp;调用对象中的方法:对象名.方法名()</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">console.log(zs.name);
+console.log(zs["sex"]);
+zs.test();
+zs.addAge(6);
+console.log(ls.name);
+ls.showInfo();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://s2.loli.net/2022/08/06/pGs2jE8WmL9HJDc.png" alt="image-20220806093553224"></p>
+<h2 id="二、对象的遍历"><a href="#二、对象的遍历" class="headerlink" title="二、对象的遍历"></a>二、对象的遍历</h2><p>&amp;emsp;对象的遍历方法只有一种</p>
+<p>&amp;emsp;&amp;emsp;&nbsp;遍历对象:  for key键 in 对象名</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+    <span class="token keyword">var</span> zs<span class="token operator">=</span><span class="token punctuation">{</span>
+        <span class="token string-property property">"name"</span><span class="token operator">:</span><span class="token string">"张三"</span><span class="token punctuation">,</span>
+        <span class="token string-property property">"age"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+        <span class="token string-property property">"sex"</span><span class="token operator">:</span><span class="token string">"男"</span><span class="token punctuation">,</span>
+        <span class="token string-property property">"height"</span><span class="token operator">:</span><span class="token number">1.83</span>
+    <span class="token punctuation">}</span>
+
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> zs<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//zs.key=&gt;zs["key"]，可以将变成字符串</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;li&gt;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>key<span class="token operator">+</span><span class="token string">':'</span><span class="token operator">+</span>zs<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;/li&gt;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;/ul&gt;"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://s2.loli.net/2022/08/06/fv6UOyZQT2KCgb4.png" alt="image-20220806094339769"></p>
+<p>&amp;emsp;对象数组的遍历</p>
+<p>&amp;emsp;&amp;emsp;对象数组：顾名思义既有对象又有数组（直接上案例）</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+			<span class="token keyword">var</span> array<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">{</span>
+				<span class="token string-property property">"name"</span><span class="token operator">:</span><span class="token string">"张三"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"age"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"sex"</span><span class="token operator">:</span><span class="token string">"男"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"height"</span><span class="token operator">:</span><span class="token number">1.83</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+				<span class="token string-property property">"name"</span><span class="token operator">:</span><span class="token string">"李四"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"age"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"sex"</span><span class="token operator">:</span><span class="token string">"女"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"height"</span><span class="token operator">:</span><span class="token number">1.65</span>
+			<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+				<span class="token string-property property">"name"</span><span class="token operator">:</span><span class="token string">"王五"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"age"</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"sex"</span><span class="token operator">:</span><span class="token string">"男"</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"height"</span><span class="token operator">:</span><span class="token number">1.78</span>
+			<span class="token punctuation">}</span><span class="token punctuation">]</span>
+			
+			<span class="token comment">//obj:每一个对象</span>
+			document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;ul&gt;"</span><span class="token punctuation">)</span>
+			array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token comment">//每一条数据</span>
+				document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;li&gt;"</span><span class="token punctuation">)</span>
+				<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>key<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+				<span class="token punctuation">}</span>
+				document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;/li&gt;"</span><span class="token punctuation">)</span>
+				
+			<span class="token punctuation">}</span><span class="token punctuation">)</span>
+			document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token string">"&lt;/ul&gt;"</span><span class="token punctuation">)</span>
+			
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://s2.loli.net/2022/08/06/5TIGfjBQOVyK3gR.png" alt="image-20220806094910662"></p>
+<h2 id="三、JSON"><a href="#三、JSON" class="headerlink" title="三、JSON"></a>三、JSON</h2><p>&amp;emsp;&nbsp;json:数据格式，形如{“key”:”value”,”key”:”value”,….}</p>
+<p>&amp;emsp;两个用法：</p>
+<p>&amp;emsp;&amp;emsp;1、字符串转换为对象</p>
+<p>&amp;emsp;&amp;emsp;&amp;emsp;JSON.parse();</p>
+<p>&amp;emsp;&amp;emsp;2、将对象转换为字符串</p>
+<p>&amp;emsp;&amp;emsp;&amp;emsp;JSON.stringify();</p>
+<h2 id="四、深浅拷贝"><a href="#四、深浅拷贝" class="headerlink" title="四、深浅拷贝"></a>四、深浅拷贝</h2><p>&amp;emsp;&amp;emsp;浅拷贝：拷贝基本数据类型时，不受任何影响，当拷贝引用类型时，源对象也会被修改。<br>&amp;emsp;&amp;emsp;深拷贝：就是完完全全拷贝一份新的对象，它会在内存的堆区域重新开辟空间，修改拷贝对象就不会影响到源对象。</p>
+<p>代码：</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+			<span class="token keyword">var</span> n<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">;</span>
+			<span class="token keyword">var</span> m<span class="token operator">=</span>n<span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//6</span>
+			 <span class="token keyword">var</span> obj1<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string-property property">"a"</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string-property property">"b"</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">;</span>   <span class="token comment">//obj1:0x001</span>
+			<span class="token comment">//浅拷贝</span>
+			<span class="token keyword">var</span> obj2<span class="token operator">=</span>obj1<span class="token punctuation">;</span>   <span class="token comment">//obj2:0x001</span>
+			 obj2<span class="token punctuation">.</span>a<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//{a: 6, b: 2}</span>
+			<span class="token comment">//对象深拷贝</span>
+			<span class="token keyword">var</span> obj3<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> obj1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token comment">//obj3.a=1;</span>
+				obj3<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">=</span>obj1<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj3<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//{a: 6, b: 2}</span>
+			obj3<span class="token punctuation">.</span>b<span class="token operator">=</span><span class="token number">888</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj3<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//{a: 6, b: 888}</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//{a: 6, b: 2}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://s2.loli.net/2022/08/06/Ys4UC7o8Nni5xv9.png" alt="image-20220806103953731"></p>
+<br>
+
+<p>&amp;emsp;&amp;emsp;一些更复杂的对象数组结合就需要特殊的函数实现</p>
+<p>代码：</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+		   <span class="token keyword">var</span> obj1<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string-property property">"a"</span><span class="token operator">:</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string-property property">"b"</span><span class="token operator">:</span><span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+		   <span class="token keyword">var</span> ary1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		   
+		   <span class="token keyword">var</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+				<span class="token string-property property">"a"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"b"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"c"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'hello'</span><span class="token punctuation">,</span> <span class="token string">'world'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+				<span class="token string-property property">"stu"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+					<span class="token string-property property">'name'</span><span class="token operator">:</span> <span class="token string">'zs'</span><span class="token punctuation">,</span>
+					<span class="token string-property property">"age"</span><span class="token operator">:</span> <span class="token number">18</span><span class="token punctuation">,</span>
+					<span class="token string-property property">"score"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">]</span>
+				<span class="token punctuation">}</span>
+			<span class="token punctuation">}</span>
+			<span class="token comment">//obj可能是数组也可能是对象</span>
+			<span class="token keyword">function</span> <span class="token function">deepCopy</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token keyword">var</span> newObj<span class="token operator">=</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token operator">?</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+				<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">!=</span><span class="token string">"object"</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						newObj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">=</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+					<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+						<span class="token comment">//递归</span>
+						<span class="token keyword">var</span> no<span class="token operator">=</span><span class="token function">deepCopy</span><span class="token punctuation">(</span>obj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+						newObj<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token operator">=</span>no<span class="token punctuation">;</span>
+					<span class="token punctuation">}</span>
+					
+				<span class="token punctuation">}</span>
+				<span class="token keyword">return</span> newObj<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			
+			<span class="token comment">//深拷贝</span>
+			<span class="token keyword">var</span> obj8<span class="token operator">=</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj8<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			obj8<span class="token punctuation">.</span>c<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">"奇酷"</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj8<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+			<span class="token keyword">var</span> obj2<span class="token operator">=</span><span class="token function">deepCopy</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+			<span class="token keyword">var</span> ary2<span class="token operator">=</span><span class="token function">deepCopy</span><span class="token punctuation">(</span>ary1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>ary2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+			<span class="token keyword">var</span> obj6<span class="token operator">=</span><span class="token function">deepCopy</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			obj6<span class="token punctuation">.</span>stu<span class="token punctuation">.</span>score<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj6<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://s2.loli.net/2022/08/06/wgWIOJhmEfn6qc8.png" alt="image-20220806104418702"></p>
+<h2 id="五、总结"><a href="#五、总结" class="headerlink" title="五、总结"></a>五、总结</h2><p>&amp;emsp;&amp;emsp;对象和数组都是比较杂、碎的两个知识点，需要多加练习。深浅拷贝也是个难点，嵌套太多的话容易混淆。多多努力，加油！！！</p>
 
                 
             </div>
@@ -675,7 +802,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jiuzuiya.github.io/2022/07/10/%E5%85%A5%E5%9D%91%E7%AC%AC%E4%B8%80%E5%A4%A9/">http://jiuzuiya.github.io/2022/07/10/%E5%85%A5%E5%9D%91%E7%AC%AC%E4%B8%80%E5%A4%A9/</a>
+                    <a href="http://jiuzuiya.github.io/2022/08/06/JS%E5%AF%B9%E8%B1%A1/">http://jiuzuiya.github.io/2022/08/06/JS%E5%AF%B9%E8%B1%A1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -762,13 +889,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/08/06/JS%E5%AF%B9%E8%B1%A1/">
+                <a href="/2022/08/06/JS%20%E6%95%B0%E7%BB%84/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="JS 对象">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="JS 数组">
                         
-                        <span class="card-title">JS 对象</span>
+                        <span class="card-title">JS 数组</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -799,13 +926,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/17/hello-world/">
+                <a href="/2022/07/10/%E5%85%A5%E5%9D%91%E7%AC%AC%E4%B8%80%E5%A4%A9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="入坑第一天  初始HTML">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">入坑第一天  初始HTML</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -816,7 +943,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-07-10
                             </span>
                         <span class="publish-author">
                             
