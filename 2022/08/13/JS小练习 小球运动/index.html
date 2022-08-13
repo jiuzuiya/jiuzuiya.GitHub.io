@@ -4,11 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JS 基础, Jiuzui">
-    <meta name="description" content="@TOC
-前言今天分享的是最近在学习的内容，对我来说还是很费脑细胞的。废话少说，让我们步入今天的学习。
-js基础js引入方式js的引入方式与css一样也是有三种方法1.行内式
-&amp;lt;p onclick=&#34;alert(&#39;行内式&#39;)&#34;&amp;gt;">
+    <meta name="keywords" content="JS 小练习 小球运动, Jiuzui">
+    <meta name="description" content="JS小练习 小球运动先上效果图
+代码&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;meta charset=&#34;utf-8&#34;&amp;gt;
+		&amp;lt;title&amp;gt;&amp;lt;/ti">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -31,7 +33,7 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
     </style>
 
 
-    <title>JS 基础 | Jiuzui</title>
+    <title>JS 小练习 小球运动 | Jiuzui</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -437,12 +439,12 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JS 基础</h1>
+                    <h1 class="description center-align post-title">JS 小练习 小球运动</h1>
                 </div>
             </div>
         </div>
@@ -570,7 +572,7 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-06
+                    2022-08-13
                 </div>
                 
 
@@ -594,124 +596,100 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>@<a href="%E7%9B%AE%E5%BD%95">TOC</a></p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>今天分享的是最近在学习的内容，对我来说还是很费脑细胞的。废话少说，让我们步入今天的学习。</p>
-<h2 id="js基础"><a href="#js基础" class="headerlink" title="js基础"></a>js基础</h2><h3 id="js引入方式"><a href="#js引入方式" class="headerlink" title="js引入方式"></a>js引入方式</h3><p>js的引入方式与css一样也是有三种方法<br>1.行内式</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token special-attr"><span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token value javascript language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'行内式'</span><span class="token punctuation">)</span></span><span class="token punctuation">"</span></span></span><span class="token punctuation">&gt;</span></span>开心每一天<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p> 2.内嵌式</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-	<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"内嵌式"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>  3.外链式</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>js/test.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-```			
-		
-行内式通过点击事件 onclick 来引用，当然还有其他方法。比如：函数（常用）。		
-禁止外链和内嵌同时写，内嵌会被覆盖
-###  js输出方式
-代码：
-```js
-//输出:数值不加双引号或反引号，字符串加双引号或反引号
-	alert("弹框警告!");
-	console.log("日志输出");
-	console.info("信息输出");
-	console.error("错误信息输出");
-	console.warn("警告信息输出");
-	document.write("文档输出");
-	document.write("<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>active<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>111<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>");
-//js中的字符串换行都要通过 + 号拼接
-	document.write(
-	"<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>1<span class="token punctuation">'</span></span> <span class="token attr-name">cellspacing</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>0<span class="token punctuation">'</span></span> <span class="token attr-name">cellpadding</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>0<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>"+
-	"<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>"+
-	"<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>"+
-	"<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>");
-//反引号(tab键上边)可以不用   + 号拼接
-	document.write(`<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token attr-name">cellspacing</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">cellpadding</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>th</span><span class="token punctuation">&gt;</span></span>Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>th</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Data<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>`)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>效果：<br>    <img src="https://img-blog.csdnimg.cn/8dabe3ac4f264976bb0b9d1572b31050.png" alt="在这里插入图片描述"></p>
-<h3 id="变量的声明与赋值"><a href="#变量的声明与赋值" class="headerlink" title="变量的声明与赋值"></a>变量的声明与赋值</h3><p>代码：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//变量声明未赋值</span>
-	<span class="token keyword">var</span> a<span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//undefined,未定义</span>
-<span class="token comment">//变量未声明，报错代码会阻塞后边代码的执行</span>
-<span class="token comment">// console.log(c);  //报错,c is not defined</span>
-<span class="token comment">//变量赋值</span>
-	a<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//1</span>
-<span class="token comment">//变量声明并赋值,也叫变量的初始化</span>
-	<span class="token keyword">var</span> b<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//2</span>
-	b<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">;</span>    <span class="token comment">//把原来的2覆盖掉</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//6</span>
-	b<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">;</span>    <span class="token comment">//把6覆盖了</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//8</span>
-			
-<span class="token comment">//变量输出不能加双引号</span>
-	<span class="token keyword">var</span> m<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">,</span>n<span class="token operator">=</span><span class="token number">8</span><span class="token punctuation">;</span> <span class="token comment">//同时声明了多个变量</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token comment">// var d;</span>
-	<span class="token comment">// var e=16</span>
-	<span class="token keyword">var</span> d<span class="token punctuation">,</span>e<span class="token operator">=</span><span class="token number">16</span><span class="token punctuation">;</span>
-	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//undefined</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="JS小练习-小球运动"><a href="#JS小练习-小球运动" class="headerlink" title="JS小练习 小球运动"></a>JS小练习 小球运动</h1><h2 id="先上效果图"><a href="#先上效果图" class="headerlink" title="先上效果图"></a>先上效果图</h2><p><img src="https://s2.loli.net/2022/08/11/PkqgNVnZ1jiJQbo.gif" alt="小球运动"></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+			<span class="token selector">*</span><span class="token punctuation">{</span>
+				<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+				<span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">.box</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+				<span class="token property">margin</span><span class="token punctuation">:</span> 0 auto<span class="token punctuation">;</span>
+				<span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">.wall</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+				<span class="token property">height</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+				<span class="token property">border</span><span class="token punctuation">:</span> 5px solid lightgrey<span class="token punctuation">;</span>
+				<span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">button</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+				<span class="token property">line-height</span><span class="token punctuation">:</span> 50px<span class="token punctuation">;</span>
+				<span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+				<span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+				<span class="token property">font-weight</span><span class="token punctuation">:</span> bolder<span class="token punctuation">;</span>
+				<span class="token property">background-color</span><span class="token punctuation">:</span> skyblue<span class="token punctuation">;</span>
+				<span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+				<span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+				<span class="token property">margin-top</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">.boll</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+				<span class="token property">height</span><span class="token punctuation">:</span> 80px<span class="token punctuation">;</span>
+				<span class="token property">border-radius</span><span class="token punctuation">:</span> 50%<span class="token punctuation">;</span>
+				<span class="token property">background-color</span><span class="token punctuation">:</span> cyan<span class="token punctuation">;</span>
+				<span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+				<span class="token property">bottom</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+				<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>box<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wall<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+				<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>boll<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>开始<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+			<span class="token comment">// 获取容器</span>
+			<span class="token keyword">var</span> _wall <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.wall'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token comment">// 获取开始按钮</span>
+			<span class="token keyword">var</span> _button <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'button'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token comment">// 获取小球</span>
+			<span class="token keyword">var</span> _boll <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.boll'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			_button<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				<span class="token comment">// XY轴运动速度</span>
+				<span class="token keyword">var</span> <span class="token constant">X</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+				<span class="token keyword">var</span> <span class="token constant">Y</span> <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span>
+				<span class="token keyword">var</span> id <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					_boll<span class="token punctuation">.</span>style<span class="token punctuation">.</span>left <span class="token operator">=</span> _boll<span class="token punctuation">.</span>offsetLeft<span class="token operator">+</span><span class="token constant">X</span><span class="token operator">+</span><span class="token string">'px'</span><span class="token punctuation">;</span>
+					_boll<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> _boll<span class="token punctuation">.</span>offsetTop<span class="token operator">-</span><span class="token constant">Y</span><span class="token operator">+</span><span class="token string">'px'</span><span class="token punctuation">;</span>
+					<span class="token comment">// 到最右边,反转运动方向</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>_wall<span class="token punctuation">.</span>clientWidth<span class="token operator">-</span>_boll<span class="token punctuation">.</span>offsetLeft<span class="token operator">&lt;=</span>_boll<span class="token punctuation">.</span>offsetWidth<span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token constant">X</span><span class="token operator">*=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+					<span class="token punctuation">}</span>
+					<span class="token comment">// 到最上边，反转运动方向</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>_boll<span class="token punctuation">.</span>offsetTop<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token constant">Y</span><span class="token operator">*=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+					<span class="token punctuation">}</span>
+					<span class="token comment">// 到最左边，反转运动方向</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>_boll<span class="token punctuation">.</span>offsetLeft<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token constant">X</span><span class="token operator">*=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+					<span class="token punctuation">}</span>
+					<span class="token comment">// 到最下边，反转运动方向</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>_wall<span class="token punctuation">.</span>clientHeight<span class="token operator">-</span>_boll<span class="token punctuation">.</span>offsetTop<span class="token operator">&lt;=</span>_boll<span class="token punctuation">.</span>offsetHeight<span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token constant">Y</span><span class="token operator">*=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>控制台输出：</p>
-<p><img src="https://img-blog.csdnimg.cn/95e768578a9240d6932773912728c829.png" alt="在这里插入图片描述"></p>
-<h3 id="变量命名规则"><a href="#变量命名规则" class="headerlink" title="变量命名规则"></a>变量命名规则</h3><p>1.由字母、数字、下划线、$组成；<br>2.不以数字开头、不能是关键字、不能是保留字 </p>
-<h3 id="变量基本数据类型"><a href="#变量基本数据类型" class="headerlink" title="变量基本数据类型"></a>变量基本数据类型</h3><p>变量基本数据类型:<br>        number(数值类型)<br>        string(字符串)<br>        boolean(true真/false假)<br>        null(空值)<br>        undefined(未定义，变量声明未赋值)<br>变量引用数据类型:<br>        Array(数组)  function(函数)  object(对象)</p>
-<p>判断数据类型  typeof(值)</p>
-<h3 id="数据类型的转换"><a href="#数据类型的转换" class="headerlink" title="数据类型的转换"></a>数据类型的转换</h3><p>1、其他类型转换为字符串<br>        加号拼接<br>        String()<br>        toString()<br>    2、其他类型转换为数值<br>        *  /  -   都可以但是 + 不行（一般用 *1，不会改变大小）<br>        Number()<br>        parseInt() 转换为整型，将小数位截掉，不是四舍五入<br>        parseFloat() 转换为浮点型<br>    3、其他类型转换为布尔<br>        !!<br>        Boolean()<br>代码：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">//1、其他类型转换为字符串</span>
-		<span class="token comment">// 加号拼接</span>
-			<span class="token keyword">var</span> a<span class="token operator">=</span><span class="token number">13</span><span class="token punctuation">;</span>
-			a<span class="token operator">=</span>a<span class="token operator">+</span><span class="token string">""</span><span class="token punctuation">;</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//"13"</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//string</span>
-		<span class="token comment">//String()</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//16</span>
-			<span class="token keyword">var</span> b<span class="token operator">=</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//string</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token operator">+</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//string</span>
-	<span class="token comment">//2、其他类型转换为数值</span>
-		<span class="token keyword">var</span> str<span class="token operator">=</span><span class="token string">"11.5"</span><span class="token punctuation">;</span>
-		<span class="token comment">// *1</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span>str<span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//number</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token string">"aaaa"</span><span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//number</span>
-		<span class="token comment">//not a number,不是一个数值</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"aaaa"</span><span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//NAN，not a number</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//1</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token operator">*</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//0</span>
-		<span class="token comment">//Number()</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//number</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//123</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"false"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//number</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"false"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//NaN</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//0</span>
-		<span class="token comment">//parseInt() 转换为整型，将小数位截掉，不是四舍侮辱</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token number">11.99999</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//11</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//NAN</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"aaaa"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//NAN</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"123aaa"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//123</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"1a2a3"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//1</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">"a123"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//NaN</span>
-		<span class="token comment">//parseFloat() 转换为浮点型</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">"11.3333"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//11.3333</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">"11.3333aaa"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//11.3333</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">"11"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//11</span>
-	<span class="token comment">//3、其他类型转换为布尔</span>
-		<span class="token comment">//!!</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//false</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">-</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token string">"aa"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//false</span>
-		<span class="token comment">//Boolean</span>
-			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token string">"aa"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>控制台输出：<br>    <img src="https://img-blog.csdnimg.cn/ac66159651804e508314d2127a7b0ac9.png" alt="在这里插入图片描述"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>今天讲到这，js基础的一般，前期可能较为简单。到后面循环才是烧脑的地方（多多练习会好很多）。<br>拜拜，下期见！</p>
+
+
+<h2 id="总结用到的知识"><a href="#总结用到的知识" class="headerlink" title="总结用到的知识"></a>总结用到的知识</h2><p>&amp;emsp;&amp;emsp;元素的可视距离: tag.clientHeight,tag.clientWidth</p>
+<p>&amp;emsp;&amp;emsp;元素控件距离: tag.offsetHeight,tag.offsetWidth </p>
+<p>&amp;emsp;&amp;emsp;被撑开的距离: tag.scrollHieght,tag.scrollWidth</p>
+<p>&amp;emsp;&amp;emsp;元素的位置: tag.offsetLeft,tag.offsetTop</p>
+<p>今天就到这，下课！♥</p>
 
                 
             </div>
@@ -738,7 +716,7 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jiuzuiya.github.io/2022/08/06/JS%20%E5%9F%BA%E7%A1%80/">http://jiuzuiya.github.io/2022/08/06/JS%20%E5%9F%BA%E7%A1%80/</a>
+                    <a href="http://jiuzuiya.github.io/2022/08/13/JS%E5%B0%8F%E7%BB%83%E4%B9%A0%20%E5%B0%8F%E7%90%83%E8%BF%90%E5%8A%A8/">http://jiuzuiya.github.io/2022/08/13/JS%E5%B0%8F%E7%BB%83%E4%B9%A0%20%E5%B0%8F%E7%90%83%E8%BF%90%E5%8A%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -825,13 +803,13 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/08/13/JS%E5%B0%8F%E7%BB%83%E4%B9%A0%20%E5%B0%8F%E7%90%83%E8%BF%90%E5%8A%A8/">
+                <a href="/2022/08/13/DOM%E8%8A%82%E7%82%B9/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="JS 小练习 小球运动">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="DOM节点">
                         
-                        <span class="card-title">JS 小练习 小球运动</span>
+                        <span class="card-title">DOM节点</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -862,13 +840,13 @@ js基础js引入方式js的引入方式与css一样也是有三种方法1.行内
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/06/JS%20%E6%95%B0%E7%BB%84/">
+                <a href="/2022/08/06/JS%20%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="JS 数组">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="JS 基础">
                         
-                        <span class="card-title">JS 数组</span>
+                        <span class="card-title">JS 基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
