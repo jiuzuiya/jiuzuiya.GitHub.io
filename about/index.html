@@ -476,9 +476,10 @@
 
 
 <script>
-        $('.bg-cover').css('background-image', 'url(https://api.abcyun.co/api/others/randacgimage/token/5d8f31cf6a8ab)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
-    
 
 
 
