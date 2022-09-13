@@ -4,13 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="jQuery小练习, Jiuzui">
-    <meta name="description" content="小练习 (jQuery实现爱好选择)废话不多说，直接上代码
-&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-	&amp;lt;head&amp;gt;
-		&amp;lt;meta charset=&#34;utf-8&#34;&amp;gt;
-		&amp;lt;titl">
+    <meta name="keywords" content="Node.js中一些基本的npm指令, Jiuzui">
+    <meta name="description" content="npm命令​		cmd/app: npm init -y		初始化node项目
+​		cmd/app: node index.js	运行node文件
+设置淘宝镜像​				npm config set registry http://reg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -33,7 +30,7 @@
     </style>
 
 
-    <title>jQuery小练习 | Jiuzui</title>
+    <title>Node.js中一些基本的npm指令 | Jiuzui</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -439,12 +436,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">jQuery小练习</h1>
+                    <h1 class="description center-align post-title">Node.js中一些基本的npm指令</h1>
                 </div>
             </div>
         </div>
@@ -568,8 +565,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/jQuery/" class="post-category">
-                                jQuery
+                            <a href="/categories/Node-js/" class="post-category">
+                                Node.js
                             </a>
                         
                     </div>
@@ -581,7 +578,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-03
+                    2022-09-13
                 </div>
                 
 
@@ -610,60 +607,83 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="小练习-jQuery实现爱好选择"><a href="#小练习-jQuery实现爱好选择" class="headerlink" title="小练习 (jQuery实现爱好选择)"></a>小练习 (jQuery实现爱好选择)</h2><p>废话不多说，直接上代码</p>
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>爱好:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>all<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>全选<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>全选  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>游泳<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>游泳
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>爬山<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>爬山
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>听音乐<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>听音乐
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>学WEB<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>学web
-		
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>当前选中的爱好:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>b</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hobby<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>[]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>b</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../js/jquery-3.6.0.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
-			<span class="token function">$</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-				<span class="token keyword">var</span> ary<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment">//存放当前的爱好</span>
-				<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">":checkbox"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-					<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>checked<span class="token punctuation">)</span><span class="token punctuation">{</span>
-						ary<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
-					<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
-						<span class="token comment">//获取取消的爱好在数组中的下标</span>
-						<span class="token keyword">var</span> index<span class="token operator">=</span>ary<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-						ary<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-					<span class="token punctuation">}</span>
-					<span class="token keyword">var</span> str<span class="token operator">=</span><span class="token string">'['</span>
-					<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> s <span class="token keyword">of</span> ary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-						str<span class="token operator">+=</span>s<span class="token operator">+</span><span class="token string">"、"</span>
-					<span class="token punctuation">}</span>
-					str<span class="token operator">+=</span><span class="token string">']'</span>
-					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"b"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
-				<span class="token punctuation">}</span><span class="token punctuation">)</span>
-				
-				
-				<span class="token comment">//全选</span>
-				<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#all"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">":checkbox"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span><span class="token keyword">this</span><span class="token punctuation">.</span>checked<span class="token punctuation">)</span>
-				<span class="token punctuation">}</span><span class="token punctuation">)</span>
-				
-				<span class="token comment">//反选</span>
-				<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">":checkbox:not(#all)"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-					<span class="token keyword">var</span> status<span class="token operator">=</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">":checked:not(#all)"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token operator">==</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">":checkbox:not(#all)"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>
-					<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">"#all"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prop</span><span class="token punctuation">(</span><span class="token string">"checked"</span><span class="token punctuation">,</span>status<span class="token punctuation">)</span>
-				<span class="token punctuation">}</span><span class="token punctuation">)</span>
-			<span class="token punctuation">}</span><span class="token punctuation">)</span>
-		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="npm命令"><a href="#npm命令" class="headerlink" title="npm命令"></a>npm命令</h1><p>​		cmd/app: npm init -y		初始化node项目</p>
+<p>​		cmd/app: node index.js	运行node文件</p>
+<h2 id="设置淘宝镜像"><a href="#设置淘宝镜像" class="headerlink" title="设置淘宝镜像"></a>设置淘宝镜像</h2><p>​				npm config set registry <a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org/</a></p>
+<p>​				npm config get registry 查看下载源</p>
+<h2 id="npm包管理器，用于安装第三方库"><a href="#npm包管理器，用于安装第三方库" class="headerlink" title="npm包管理器，用于安装第三方库"></a>npm包管理器，用于安装第三方库</h2><pre><code>          cmd   /app:
+</code></pre>
+<p>​                      安装：</p>
+<p>​                                  npm    i     pkg1 pkg2 pkg3     局部安装</p>
+<p>​                                  npm  i  pkg  -g    全局安装</p>
+<p>​                                  npm root view -g  查看全局安装目录</p>
+<p>​                                  npm  i  pkg  -D    开发时使用</p>
+<p>​                                  npm  i  pkg  -S     开发和上线后都使用</p>
+<p>​                                  npm i   pkg@版本    指定版本安装</p>
+<p>​                                  npm list 查看插件</p>
+<p>​                      卸载:    </p>
+<p>​                             npm  uninstall    pkg</p>
+<p>​                             npm  remove    pkg</p>
+<p>​                             npm r jquery</p>
+<p>​                      更新：</p>
+<p>​                             npm view jquery versions   查看历史版本</p>
+<p>​                             npm update  jquery</p>
+<p>​                      安装和卸载帮助命令： </p>
+<p>​	                          npm install -h</p>
+<p>​	                          npm uninstall -h</p>
+<h2 id="模块使用"><a href="#模块使用" class="headerlink" title="模块使用"></a>模块使用</h2><h3 id="第三方模块（需先引入在使用）"><a href="#第三方模块（需先引入在使用）" class="headerlink" title="第三方模块（需先引入在使用）"></a>第三方模块（需先引入在使用）</h3><p>​		npm i pkg	</p>
+<p>​		var pkg = require(‘http’)</p>
+<h3 id="内置模块"><a href="#内置模块" class="headerlink" title="内置模块"></a>内置模块</h3><p>​		var fs = require(‘fs’);</p>
+<p>​		var http = require(‘http’)</p>
+<h3 id="自定义模块"><a href="#自定义模块" class="headerlink" title="自定义模块"></a>自定义模块</h3><p>​		导出(写在单独的js文件中 ’utils.js‘)：</p>
+<p>​				module.exports={‘属性名’:’属性值’,’属性名’:’属性值’}</p>
+<p>​		导入:</p>
+<p>​				var utils = require(‘./utils’);		</p>
+<h2 id="文件读写"><a href="#文件读写" class="headerlink" title="文件读写"></a>文件读写</h2><h3 id="同步读"><a href="#同步读" class="headerlink" title="同步读"></a>同步读</h3><p>代码展示：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> res <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'./first.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>效果演示</p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209132004229.gif" alt="爱好"></p>
+<pre class="line-numbers language-first.txt" data-language="first.txt"><code class="language-first.txt">你好明天!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131914752.png" alt="image-20220913191420761"></p>
+<h3 id="异步读："><a href="#异步读：" class="headerlink" title="异步读："></a>异步读：</h3><p>​	代码展示：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./first.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	效果展示：</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131917306.png" alt="image-20220913191745265"></p>
+<h3 id="同步写"><a href="#同步写" class="headerlink" title="同步写"></a>同步写</h3><p>​	代码展示：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span><span class="token string">'web大前端'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">33</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>效果展示：</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131920322.png" alt="image-20220913192009285"></p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131920320.png" alt="image-20220913192026284"></p>
+<h3 id="异步写"><a href="#异步写" class="headerlink" title="异步写"></a>异步写</h3><p>​	代码展示：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">77</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span><span class="token string">'Nodejs'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'写入成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>​	效果展示：</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131921026.png" alt="image-20220913192152987"></p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131922247.png" alt="image-20220913192203214"></p>
 
                 
             </div>
@@ -690,7 +710,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jiuzuiya.github.io/2022/09/03/%E5%B0%8F%E7%BB%83%E4%B9%A0%20(jQuery%E5%AE%9E%E7%8E%B0%E7%88%B1%E5%A5%BD%E9%80%89%E6%8B%A9)/">http://jiuzuiya.github.io/2022/09/03/%E5%B0%8F%E7%BB%83%E4%B9%A0%20(jQuery%E5%AE%9E%E7%8E%B0%E7%88%B1%E5%A5%BD%E9%80%89%E6%8B%A9)/</a>
+                    <a href="http://jiuzuiya.github.io/2022/09/13/npm%E5%91%BD%E4%BB%A4/">http://jiuzuiya.github.io/2022/09/13/npm%E5%91%BD%E4%BB%A4/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -777,13 +797,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/13/npm%E5%91%BD%E4%BB%A4/">
+                <a href="/2022/09/13/Node.js%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Node.js中一些基本的npm指令">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="用Node.js搭建的一个极简的本地服务器">
                         
-                        <span class="card-title">Node.js中一些基本的npm指令</span>
+                        <span class="card-title">用Node.js搭建的一个极简的本地服务器</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -818,13 +838,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/03/jQuery%E5%BC%95%E5%85%A5/">
+                <a href="/2022/09/03/%E5%B0%8F%E7%BB%83%E4%B9%A0%20(jQuery%E5%AE%9E%E7%8E%B0%E7%88%B1%E5%A5%BD%E9%80%89%E6%8B%A9)/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="jquery基础">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="jQuery小练习">
                         
-                        <span class="card-title">jquery基础</span>
+                        <span class="card-title">jQuery小练习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
