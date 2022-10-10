@@ -4,10 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Node.js中一些基本的npm指令, Jiuzui">
-    <meta name="description" content="npm命令​		cmd/app: npm init -y		初始化node项目
-​		cmd/app: node index.js	运行node文件
-设置淘宝镜像​				npm config set registry http://reg">
+    <meta name="keywords" content="Vant——移动端Vue组件库, Jiuzui">
+    <meta name="description" content="vant——Vue组件库的使用(Vue2)安装vant通过npm安装
+在vue2项目执行npm
+npm i vant@latest-v2 -S
+
+
+
+引入vant组件(在vue全局main.js中引入  )import Vue from &#39;">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -30,7 +34,7 @@
     </style>
 
 
-    <title>Node.js中一些基本的npm指令 | Jiuzui</title>
+    <title>Vant——移动端Vue组件库 | Jiuzui</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -436,12 +440,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Node.js中一些基本的npm指令</h1>
+                    <h1 class="description center-align post-title">Vant——移动端Vue组件库</h1>
                 </div>
             </div>
         </div>
@@ -565,8 +569,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Node-js/" class="post-category">
-                                Node.js
+                            <a href="/categories/Vue/" class="post-category">
+                                Vue
                             </a>
                         
                     </div>
@@ -578,7 +582,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-13
+                    2022-10-10
                 </div>
                 
 
@@ -607,83 +611,126 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="npm命令"><a href="#npm命令" class="headerlink" title="npm命令"></a>npm命令</h1><p>​		cmd/app: npm init -y		初始化node项目</p>
-<p>​		cmd/app: node index.js	运行node文件</p>
-<h2 id="设置淘宝镜像"><a href="#设置淘宝镜像" class="headerlink" title="设置淘宝镜像"></a>设置淘宝镜像</h2><p>​				npm config set registry <a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org/</a></p>
-<p>​				npm config get registry 查看下载源</p>
-<h2 id="npm包管理器，用于安装第三方库"><a href="#npm包管理器，用于安装第三方库" class="headerlink" title="npm包管理器，用于安装第三方库"></a>npm包管理器，用于安装第三方库</h2><pre><code>          cmd   /app:
-</code></pre>
-<p>​                      安装：</p>
-<p>​                                  npm    i     pkg1 pkg2 pkg3     局部安装</p>
-<p>​                                  npm  i  pkg  -g    全局安装</p>
-<p>​                                  npm root view -g  查看全局安装目录</p>
-<p>​                                  npm  i  pkg  -D    开发时使用</p>
-<p>​                                  npm  i  pkg  -S     开发和上线后都使用</p>
-<p>​                                  npm i   pkg@版本    指定版本安装</p>
-<p>​                                  npm list 查看插件</p>
-<p>​                      卸载:    </p>
-<p>​                             npm  uninstall    pkg</p>
-<p>​                             npm  remove    pkg</p>
-<p>​                             npm r jquery</p>
-<p>​                      更新：</p>
-<p>​                             npm view jquery versions   查看历史版本</p>
-<p>​                             npm update  jquery</p>
-<p>​                      安装和卸载帮助命令： </p>
-<p>​	                          npm install -h</p>
-<p>​	                          npm uninstall -h</p>
-<h2 id="模块使用"><a href="#模块使用" class="headerlink" title="模块使用"></a>模块使用</h2><h3 id="第三方模块（需先引入在使用）"><a href="#第三方模块（需先引入在使用）" class="headerlink" title="第三方模块（需先引入在使用）"></a>第三方模块（需先引入在使用）</h3><p>​		npm i pkg	</p>
-<p>​		var pkg = require(‘http’)</p>
-<h3 id="内置模块"><a href="#内置模块" class="headerlink" title="内置模块"></a>内置模块</h3><p>​		var fs = require(‘fs’);</p>
-<p>​		var http = require(‘http’)</p>
-<h3 id="自定义模块"><a href="#自定义模块" class="headerlink" title="自定义模块"></a>自定义模块</h3><p>​		导出(写在单独的js文件中 ’utils.js‘)：</p>
-<p>​				module.exports={‘属性名’:’属性值’,’属性名’:’属性值’}</p>
-<p>​		导入:</p>
-<p>​				var utils = require(‘./utils’);		</p>
-<h2 id="文件读写"><a href="#文件读写" class="headerlink" title="文件读写"></a>文件读写</h2><h3 id="同步读"><a href="#同步读" class="headerlink" title="同步读"></a>同步读</h3><p>代码展示：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> res <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'./first.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h1 id="vant——Vue组件库的使用-Vue2"><a href="#vant——Vue组件库的使用-Vue2" class="headerlink" title="vant——Vue组件库的使用(Vue2)"></a>vant——Vue组件库的使用(Vue2)</h1><h2 id="安装vant"><a href="#安装vant" class="headerlink" title="安装vant"></a>安装vant</h2><p>通过npm安装</p>
+<p>在vue2项目执行npm</p>
+<pre class="line-numbers language-npm" data-language="npm"><code class="language-npm">npm i vant@latest-v2 -S<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<pre class="line-numbers language-first.txt" data-language="first.txt"><code class="language-first.txt">你好明天!<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>效果展示：</p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131914752.png" alt="image-20220913191420761"></p>
-<h3 id="异步读："><a href="#异步读：" class="headerlink" title="异步读："></a>异步读：</h3><p>​	代码展示：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">'./first.txt'</span><span class="token punctuation">,</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>​	效果展示：</p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131917306.png" alt="image-20220913191745265"></p>
-<h3 id="同步写"><a href="#同步写" class="headerlink" title="同步写"></a>同步写</h3><p>​	代码展示：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">22</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span><span class="token string">'web大前端'</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">33</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="引入vant组件-在vue全局main-js中引入"><a href="#引入vant组件-在vue全局main-js中引入" class="headerlink" title="引入vant组件(在vue全局main.js中引入  )"></a>引入vant组件(在vue全局main.js中引入  )</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span> 
+<span class="token keyword">import</span> Vant <span class="token keyword">from</span> <span class="token string">'vant'</span><span class="token punctuation">;</span> 
+<span class="token keyword">import</span> <span class="token string">'vant/lib/index.css'</span><span class="token punctuation">;</span> 
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vant<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>效果展示：</p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131920322.png" alt="image-20220913192009285"></p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131920320.png" alt="image-20220913192026284"></p>
-<h3 id="异步写"><a href="#异步写" class="headerlink" title="异步写"></a>异步写</h3><p>​	代码展示：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">var</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">77</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token string">'./write.txt'</span><span class="token punctuation">,</span><span class="token string">'Nodejs'</span><span class="token punctuation">,</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-	<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'写入成功'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">88</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>​	效果展示：</p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131921026.png" alt="image-20220913192152987"></p>
-<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202209131922247.png" alt="image-20220913192203214"></p>
+
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101752112.png" alt="image-20221010175246875"></p>
+<h2 id="查看文档-使用需求的组件-演示组件"><a href="#查看文档-使用需求的组件-演示组件" class="headerlink" title="查看文档  使用需求的组件(演示组件)"></a>查看文档  使用需求的组件(演示组件)</h2><h3 id="Area省市区选择组件"><a href="#Area省市区选择组件" class="headerlink" title="Area省市区选择组件"></a>Area省市区选择组件</h3><p>1、在项目文件下下载@vant/area-data</p>
+<p>​	<img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101917521.png" alt="image-20221010191702483"></p>
+<p>2、在全局main.js中导入Area组件</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101911630.png" alt="image-20221010191118509"></p>
+<p>3、在页面中引用(不要写在全局main.js中,写在引用的页面中)</p>
+<p>​	<img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101919239.png" alt="image-20221010191921193"></p>
+<p>4、最后在页面中使用</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101920020.png" alt="image-20221010192018966"></p>
+<h2 id="结束，完整代码-引用几个组件"><a href="#结束，完整代码-引用几个组件" class="headerlink" title="结束，完整代码(引用几个组件)"></a>结束，完整代码(引用几个组件)</h2><p>全局 main.js</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
+<span class="token keyword">import</span> router <span class="token keyword">from</span> <span class="token string">'./router'</span>
+<span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span>
+
+<span class="token comment">// 导入vant</span>
+<span class="token keyword">import</span> Vant <span class="token keyword">from</span> <span class="token string">'vant'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">'vant/lib/index.css'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vant<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 导入Cascader 级联选择组件</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+	Area
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vant'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Area<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 导入加载</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Loading <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vant'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Loading<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 弹窗</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Popup <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vant'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Popup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 全局css</span>
+<span class="token keyword">import</span> <span class="token string">'./assets/css/test.css'</span>
+
+Vue<span class="token punctuation">.</span>config<span class="token punctuation">.</span>productionTip <span class="token operator">=</span> <span class="token boolean">false</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	router<span class="token punctuation">,</span>
+	store<span class="token punctuation">,</span>
+	<span class="token function-variable function">render</span><span class="token operator">:</span> <span class="token parameter">h</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>引用页面 Vant.vue</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+	&lt;div&gt;
+		&lt;!-- 按钮 --&gt;
+		&lt;van-button type="primary"&gt;主要按钮&lt;/van-button&gt;
+		&lt;van-button type="info"&gt;信息按钮&lt;/van-button&gt;
+		&lt;van-button type="default"&gt;默认按钮&lt;/van-button&gt;
+		&lt;van-button type="warning"&gt;警告按钮&lt;/van-button&gt;
+
+		&lt;!-- 选择地区 --&gt;
+		&lt;van-area title="标题" :area-list="areaList" /&gt;&lt;br&gt;
+
+		&lt;!-- 加载 --&gt;
+		&lt;div class="loading"&gt;
+			&lt;van-loading color="#1989fa" /&gt;
+			&lt;van-loading type="spinner" color="#1989fa" /&gt;
+		&lt;/div&gt;&lt;br&gt;
+
+
+		&lt;!-- 弹窗 --&gt;
+		&lt;van-cell is-link @click="showPopup"&gt;圆角弹窗&lt;/van-cell&gt;
+		&lt;!-- &lt;van-popup v-model="show"&gt;内容&lt;/van-popup&gt; --&gt;
+		&lt;van-popup v-model="show" round position="bottom" 
+				:style="{ height: '30%' }" 
+				closeable close-icon="close" /&gt;
+		&lt;!-- 
+			弹窗关闭按钮
+			closeable  close-icon="close" 
+		--&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	import {areaList} from '@vant/area-data';
+	export default {
+		data() {
+			return {
+				areaList,
+				show: false,
+			};
+		},
+		methods: {
+			showPopup() {
+				this.show = true;
+			},
+		},
+	};
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+	.loading {
+		display: flex;
+		justify-content: space-around
+	}
+&lt;/style&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>效果展示</p>
+<p><img src="https://jzblog.oss-cn-qingdao.aliyuncs.com/blog-img/202210101938043.gif" alt="vant"></p>
 
                 
             </div>
@@ -710,7 +757,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://jiuzuiya.github.io/2022/09/13/npm%E5%91%BD%E4%BB%A4/">http://jiuzuiya.github.io/2022/09/13/npm%E5%91%BD%E4%BB%A4/</a>
+                    <a href="http://jiuzuiya.github.io/2022/10/10/vant%E2%80%94%E2%80%94Vue%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8(Vue2)/">http://jiuzuiya.github.io/2022/10/10/vant%E2%80%94%E2%80%94Vue%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8(Vue2)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -793,9 +840,52 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/10/10/vant%E2%80%94%E2%80%94Vue%E7%BB%84%E4%BB%B6%E5%BA%93%E7%9A%84%E4%BD%BF%E7%94%A8(Vue2)/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Vant——移动端Vue组件库">
+                        
+                        <span class="card-title">Vant——移动端Vue组件库</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Vue/" class="post-category">
+                                    Vue
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/09/13/Node.js%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/">
                     <div class="card-image">
@@ -813,56 +903,15 @@ console<span class="token punctuation">.</span><span class="token function">log<
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
                             <a href="/categories/Node-js/" class="post-category">
                                     Node.js
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/09/03/%E5%B0%8F%E7%BB%83%E4%B9%A0%20(jQuery%E5%AE%9E%E7%8E%B0%E7%88%B1%E5%A5%BD%E9%80%89%E6%8B%A9)/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="jQuery小练习">
-                        
-                        <span class="card-title">jQuery小练习</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/jQuery/" class="post-category">
-                                    jQuery
                                 </a>
                             
                             
